@@ -1,28 +1,20 @@
 import { Component, signal } from '@angular/core';
-import {UpperCasePipe, LowerCasePipe,CurrencyPipe, DatePipe} from '@angular/common';
+
+import { Poslist } from "./poslist/poslist";
 
 @Component({
   selector: 'app-root',
-  imports: [UpperCasePipe, 
-    LowerCasePipe,
-    CurrencyPipe,
-    DatePipe,
-   ],
+  imports: [Poslist],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
   protected readonly title = signal('my-angular-app');
 
-  nameTitle : string = 'trinadh rayala';
+  name : String = 'Trinadh Rayala';
 
-  amountToDisplay : number = 777.757;
 
-  todayDate : Date = new Date();
-
-  trinadhUser : any = {
-    name : 'Trinadh Rayala',
-    age : 26,
-    email : '3nadhmail@gmail.com'
-  }
+//  changeName(){
+//     this.name = "Changed Name : Trinadh Rayala";
+//   }
 }
