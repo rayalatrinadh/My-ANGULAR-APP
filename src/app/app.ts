@@ -1,10 +1,10 @@
 import { Component, signal } from '@angular/core';
-import {Profile} from './profile/profile';
-import { Post } from "./post/post";
+
+import { Poslist } from "./poslist/poslist";
 
 @Component({
   selector: 'app-root',
-  imports: [Profile, Post],
+  imports: [Poslist],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
@@ -14,7 +14,7 @@ export class App {
   name : String = 'Trinadh Rayala';
 
 
- changeName(){
-    this.name = "Changed Name : Trinadh Rayala";
-  }
+//  changeName(){
+//     this.name = "Changed Name : Trinadh Rayala";
+//   }
 }
