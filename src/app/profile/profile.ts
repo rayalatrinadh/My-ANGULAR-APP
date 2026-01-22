@@ -6,20 +6,20 @@ import { Component, OnInit, OnChanges, Input, AfterContentChecked} from '@angula
   templateUrl: './profile.html',
   styleUrl: './profile.css',
 })
-export class Profile implements OnInit, OnChanges, AfterContentChecked {
+export class Profile  {
 
-  @Input() pName : String = '';
+  // @Input() pName : String = '';
 
-  ngOnInit(){
-    console.log(':: ngOnInit profile component triggered::');
-  }
+  // ngOnInit(){
+  //   console.log(':: ngOnInit profile component triggered::');
+  // }
 
-  ngOnChanges(){
-    console.log(':: ngOnChanges profile component triggered::');
-  }
+  // ngOnChanges(){
+  //   console.log(':: ngOnChanges profile component triggered::');
+  // }
 
-  ngAfterContentChecked(){
-    console.log(':: ngAfterContentChecked profile component triggered::');
-  }
+  // ngAfterContentChecked(){
+  //   console.log(':: ngAfterContentChecked profile component triggered::');
+  // }
 
 }

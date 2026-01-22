@@ -1,9 +1,10 @@
 import { Component, signal } from '@angular/core';
 import {Profile} from './profile/profile';
+import { Post } from "./post/post";
 
 @Component({
   selector: 'app-root',
-  imports: [Profile],
+  imports: [Profile, Post],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
