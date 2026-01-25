@@ -1,8 +1,7 @@
-<p>app works good</p>
+
+<app-poslist></app-poslist>
 
 
-
-<!-- 2026 January changes -->
 <!-- <app-profile></app-profile> -->
 
 <!-- <button (click)="changeName()">Change Name</button>  -->
@@ -11,10 +10,15 @@
 
 <app-post></app-post> -->
 
+<h1>{{nameTitle | uppercase}}</h1>
 
-<!-- 2026 January 25, changes commmented -->
-<!-- <app-poslist></app-poslist> -->
+<p>{{nameTitle | uppercase}}</p>
 
-<app-formvalidation></app-formvalidation>
+<p>{{nameTitle | lowercase}}</p>
 
-<!-- <p>works app form validatin</p> -->
+<p>{{amountToDisplay | currency : 'USD' : false}}</p>
+
+<p>{{ todayDate | date}}</p>
+
+<p>{{trinadhUser?.name}}</p>
+<p>{{trinadhUser?.age}}</p>
