@@ -1,0 +1,17 @@
+<p>formvalidation works!</p>
+
+
+<p>trinadh works</p>
+
+
+<form (submit)="submitForm(f)" #f=ngForm>
+   
+    <input name = "fullName" type = "text" placeholder = "Enter name" ngModel #fullName="ngModel" (change)="getValue(fullName)"  />
+  
+   
+   
+   <br><br> 
+   <input type = "text" name = "email" placeholder = "Enter email" ngModel/>
+<br><br>
+   <button>submit</button>
+</form>

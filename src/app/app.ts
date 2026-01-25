@@ -1,10 +1,11 @@
 import { Component, signal } from '@angular/core';
 
 import { Poslist } from "./poslist/poslist";
+import { Formvalidation } from './formvalidation/formvalidation';
 
 @Component({
   selector: 'app-root',
-  imports: [Poslist],
+  imports: [Formvalidation],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
